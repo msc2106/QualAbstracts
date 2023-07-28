@@ -17,6 +17,7 @@ datasets = "*"
 evaluate = "*"
 rouge-score = "*"
 tensorflow = "*"
+ipywidgets = "*"
 
 [dev-packages]
 
