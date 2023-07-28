@@ -12,6 +12,11 @@ scipy = "*"
 matplotlib = "*"
 seaborn = "*"
 requests = "*"
+transformers = "*"
+datasets = "*"
+evaluate = "*"
+rouge-score = "*"
+tensorflow = "*"
 
 [dev-packages]
 
