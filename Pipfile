@@ -18,6 +18,7 @@ evaluate = "*"
 rouge-score = "*"
 tensorflow = "*"
 ipywidgets = "*"
+torch = "*"
 
 [dev-packages]
 
