@@ -78,12 +78,11 @@ def make_doira_batch_processor(doi_list, start, end, batch_num):
                 doi_str += doi
             r = requests.get(DOIRA_SEARCH(doi_str))
             ra_list.extend([entry['RA'] if 'RA' in entry.keys() else np.NaN for entry in r.json()])
-            try:
-                assert len(ra_list) == sub_batch_end
-            except AssertionError as e:
+            if len(ra_list) != sub_batch_end:
                 print(len(ra_list), sub_batch_start, sub_batch_end)
                 logging.info(doi_list[sub_batch_start:sub_batch_end])
                 logging.info(r.json())
+                raise RuntimeError("see log")
             with open(output_file, mode='a') as f:
                 f.writelines([f'"{doi_list[sub_batch_start+i]}","{ra_list[sub_batch_start+i]}"\n' for i in range(sub_batch_end-sub_batch_start)])
             if len(ra_list)%1000 == 0:
@@ -134,7 +133,7 @@ def runner(df):
             start, end, ra_list = task.result()
             df.ra.iloc[start:end] = ra_list
             processed += end-start
-            logging.info('*************processed', processed, '***************')
+            logging.info(f'*************processed {processed} ***************')
     return df
 
 
@@ -148,6 +147,7 @@ def main():
     doi_df.dropna(subset=['doi'], inplace=True)
     # remove duplicated DOIs
     doi_df.drop_duplicates(subset=['doi'], inplace=True)
+    doi_df = doi_df[~doi_df.doi.str.contains('#')]
     print(f'Left to get: {doi_df.shape[0]-known_count}')
     doi_df = doi_df.merge(known_ra, how='left', on='doi')
     print(doi_df.head())
