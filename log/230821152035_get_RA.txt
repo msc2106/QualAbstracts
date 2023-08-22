@@ -1,0 +1,270 @@
+DEBUG:root:loading DOIs
+DEBUG:root:start submitting threads
+DEBUG:root:10.1111/1467-8330.00227 sent 2023-08-21 15:20:48.547721
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1163/13822373-90002428 sent 2023-08-21 15:20:50.881376
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.3354/meps09193 sent 2023-08-21 15:20:52.832481
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1177/1350508408095817 sent 2023-08-21 15:20:54.913674
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/s0022-4049(02)00180-9 sent 2023-08-21 15:20:56.913091
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.5194/acp-10-2053-2010 sent 2023-08-21 15:20:59.446784
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.jbiomech.2010.04.040 sent 2023-08-21 15:21:01.226635
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1117/12.764448 sent 2023-08-21 15:21:03.710356
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1029/2007gl030130 sent 2023-08-21 15:21:05.531197
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1074/jbc.m507038200 sent 2023-08-21 15:21:08.140617
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.automatica.2012.01.008 sent 2023-08-21 15:21:09.861821
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1256/smsqj.55701 sent 2023-08-21 15:21:12.690110
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.2139/ssrn.1114131 sent 2023-08-21 15:21:14.475440
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1111/j.1600-0838.2005.00456.x sent 2023-08-21 15:21:16.196302
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1021/jp108142j sent 2023-08-21 15:21:19.073526
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1021/ja209144h sent 2023-08-21 15:21:20.864640
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1042/bst20110713 sent 2023-08-21 15:21:22.627794
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1042/bst20110716 sent 2023-08-21 15:21:26.398054
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.5235/174410510794499816 sent 2023-08-21 15:21:28.147722
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1017/s0021088900000590 sent 2023-08-21 15:21:30.380246
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.2334/josnusd.45.171 sent 2023-08-21 15:21:32.343019
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1175/2011jpo4573.1 sent 2023-08-21 15:21:34.114195
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1136/sti.76.6.462 sent 2023-08-21 15:21:35.590826
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1258/jrsm.2012.120009 sent 2023-08-21 15:21:37.090076
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1103/physrevlett.92.066101 sent 2023-08-21 15:21:38.592472
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.foreco.2007.01.068 sent 2023-08-21 15:21:40.099074
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1177/1474022212467605 sent 2023-08-21 15:21:41.577678
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1504/ijkwi.2011.044124 sent 2023-08-21 15:21:43.056864
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1111/j.1365-3156.2006.01786.x sent 2023-08-21 15:21:44.541036
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1083/jcb.120.2.385 sent 2023-08-21 15:21:46.045377
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1179/095936810x12790101593074 sent 2023-08-21 15:21:47.528958
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.molbiopara.2008.12.008 sent 2023-08-21 15:21:49.010899
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1364/oe.16.020864 sent 2023-08-21 15:21:50.493487
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.mee.2014.02.005 sent 2023-08-21 15:21:52.013423
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1109/tsmcb.2010.2043094 sent 2023-08-21 15:21:53.524155
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.healthplace.2011.08.005 sent 2023-08-21 15:21:55.029332
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1128/ec.00186-09 sent 2023-08-21 15:21:56.528549
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1017/s0033822200042193 sent 2023-08-21 15:21:58.058950
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1196/annals.1370.024 sent 2023-08-21 15:21:59.558028
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.4028/www.scientific.net/amm.70.339 sent 2023-08-21 15:22:01.047129
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.2304/csee.2011.10.1.46 sent 2023-08-21 15:22:02.545591
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1049/ip-cds:20050238 sent 2023-08-21 15:22:04.044090
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1093/pubmed/fds075 sent 2023-08-21 15:22:05.547931
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1088/1751-8113/40/15/004 sent 2023-08-21 15:22:07.029868
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.tet.2013.07.047 sent 2023-08-21 15:22:08.558477
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1386/jafp.4.3.303_7 sent 2023-08-21 15:22:10.048043
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.2202/1941-6008.1094 sent 2023-08-21 15:22:11.576969
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1007/978-3-642-33489-4_9 sent 2023-08-21 15:22:13.081191
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.knosys.2012.04.014 sent 2023-08-21 15:22:14.580706
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.ipl.2012.01.004 sent 2023-08-21 15:22:16.079107
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1161/strokeaha.109.571729 sent 2023-08-21 15:22:17.595146
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1126/science.1207060 sent 2023-08-21 15:22:19.091689
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1109/iccad.2007.4397376 sent 2023-08-21 15:22:20.581255
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1242/jeb.01395 sent 2023-08-21 15:22:22.093735
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.2514/1.a32477 sent 2023-08-21 15:22:23.586203
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/13617672.2012.732810 sent 2023-08-21 15:22:25.066599
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.indmarman.2013.02.011 sent 2023-08-21 15:22:26.559161
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1103/physreve.87.032116 sent 2023-08-21 15:22:28.047917
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.jenvp.2013.02.003 sent 2023-08-21 15:22:29.546174
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1145/2442576.2442577 sent 2023-08-21 15:22:31.043503
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1117/1.3068652 sent 2023-08-21 15:22:32.555932
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1103/physrevb.83.115455 sent 2023-08-21 15:22:34.063937
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.4155/fmc.12.216 sent 2023-08-21 15:22:35.562552
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1109/iwcmc.2008.183 sent 2023-08-21 15:22:37.077062
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1109/wcnc.2003.1200574 sent 2023-08-21 15:22:38.579486
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.jctb.2010.12.004 sent 2023-08-21 15:22:40.079534
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.chb.2007.07.013 sent 2023-08-21 15:22:41.590618
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.chb.2007.07.012 sent 2023-08-21 15:22:43.126973
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1017/s0305004112000576 sent 2023-08-21 15:22:44.646452
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1111/j.1099-0860.2009.00227.x sent 2023-08-21 15:22:46.146591
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1520/mpc20120016 sent 2023-08-21 15:22:47.659240
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.biocon.2011.05.008 sent 2023-08-21 15:22:49.163646
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1007/978-3-642-21605-3_47 sent 2023-08-21 15:22:50.677049
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1007/s00334-012-0350-6 sent 2023-08-21 15:22:52.193141
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1177/0894439312453275 sent 2023-08-21 15:22:53.679822
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.18632/oncotarget.332 sent 2023-08-21 15:22:55.193798
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1063/1.3070532 sent 2023-08-21 15:22:56.728171
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1364/oe.19.00b197 sent 2023-08-21 15:22:58.227867
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.jmaa.2012.11.013 sent 2023-08-21 15:22:59.740801
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1075/eww.33.3.01hun sent 2023-08-21 15:23:01.229907
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1017/s0263034611000462 sent 2023-08-21 15:23:02.760536
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1111/j.1473-6861.2007.00156.x sent 2023-08-21 15:23:04.294393
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.3758/bf03192995 sent 2023-08-21 15:23:05.808324
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1007/s00233-008-9094-0 sent 2023-08-21 15:23:07.312396
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1051/0004-6361:20077783 sent 2023-08-21 15:23:08.795524
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1086/605547 sent 2023-08-21 15:23:10.292084
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1051/0004-6361:20053427 sent 2023-08-21 15:23:11.791514
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1017/s0261444808005612 sent 2023-08-21 15:23:13.280464
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1051/0004-6361:20066658 sent 2023-08-21 15:23:14.792087
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.jesp.2006.10.001 sent 2023-08-21 15:23:16.360584
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1103/physrevb.80.014502 sent 2023-08-21 15:23:17.879857
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1051/0004-6361/200912257 sent 2023-08-21 15:23:19.393635
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1111/j.1467-856x.2009.00382.x sent 2023-08-21 15:23:20.892758
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1063/1.1478779 sent 2023-08-21 15:23:22.395679
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/03055690802648531 sent 2023-08-21 15:23:23.940949
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/03085140120089072 sent 2023-08-21 15:23:25.541262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.socscimed.2009.05.022 sent 2023-08-21 15:23:27.127483
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1112/s002461150001265x sent 2023-08-21 15:23:28.625533
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1017/s0021859600008431 sent 2023-08-21 15:23:30.161857
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1117/12.680552 sent 2023-08-21 15:23:31.659009
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1037/a0020631 sent 2023-08-21 15:23:33.202247
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1063/1.370657 sent 2023-08-21 15:23:34.691790
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/09687760802526707 sent 2023-08-21 15:23:36.191574
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.2202/1555-5879.1541 sent 2023-08-21 15:23:37.685804
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1007/11564126_9 sent 2023-08-21 15:23:39.194828
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1111/j.1475-4762.2005.00621.x sent 2023-08-21 15:23:40.697039
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1038/sj.onc.1209006 sent 2023-08-21 15:23:42.192991
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/13600800500046255 sent 2023-08-21 15:23:43.694906
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.cognition.2006.01.007 sent 2023-08-21 15:23:45.177610
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1177/00187267035612005 sent 2023-08-21 15:23:46.691050
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.3758/brm.42.2.517 sent 2023-08-21 15:23:48.177462
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1029/2009jd012346 sent 2023-08-21 15:23:49.655813
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1057/jors.2010.46 sent 2023-08-21 15:23:51.160939
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1007/978-3-642-04164-8_2 sent 2023-08-21 15:23:52.659303
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.jpainsymman.2008.02.014 sent 2023-08-21 15:23:54.142326
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1111/j.1467-9329.2010.00483.x sent 2023-08-21 15:23:55.646037
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1186/1741-7007-8-65 sent 2023-08-21 15:23:57.129359
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1063/1.3478707 sent 2023-08-21 15:23:58.647887
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/0968776990070204 sent 2023-08-21 15:24:00.109414
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/0968776990070309 sent 2023-08-21 15:24:01.644685
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/0968776030110202 sent 2023-08-21 15:24:03.156409
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/0968776970050203 sent 2023-08-21 15:24:04.710101
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/0968776030110201 sent 2023-08-21 15:24:06.235930
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1093/bioinformatics/btq210 sent 2023-08-21 15:24:07.740217
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1057/palgrave.bp.4200036 sent 2023-08-21 15:24:09.230718
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1186/1748-5908-5-38 sent 2023-08-21 15:24:10.711775
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1016/j.susc.2008.05.041 sent 2023-08-21 15:24:12.178326
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/13617670903175113 sent 2023-08-21 15:24:13.678017
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/13674670701292094 sent 2023-08-21 15:24:15.213001
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1017/s1352325203000053 sent 2023-08-21 15:24:16.757401
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1021/ac800963a sent 2023-08-21 15:24:18.307359
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1080/10645578.2010.509695 sent 2023-08-21 15:24:19.780461
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1103/physrevlett.101.194801 sent 2023-08-21 15:24:21.296472
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
+DEBUG:root:10.1029/2006tc001987 sent 2023-08-21 15:24:22.851161
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.crossref.org:443
