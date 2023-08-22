@@ -1,0 +1,12 @@
+INFO:root:loading DOIs
+INFO:root:start submitting threads
+INFO:root:*************processed 340 ***************
+INFO:root:*************processed 680 ***************
+INFO:root:*************processed 1020 ***************
+INFO:root:*************processed 1360 ***************
+INFO:root:*************processed 1691 ***************
+INFO:root:*************processed 2031 ***************
+INFO:root:*************processed 2371 ***************
+INFO:root:*************processed 2711 ***************
+INFO:root:*************processed 3051 ***************
+INFO:root:*************processed 3391 ***************
