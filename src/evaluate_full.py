@@ -10,11 +10,12 @@ from sys import argv
 def main():
     working_dir = '.'
     models_dir = working_dir + '/models'
-    if len(argv) == 1:
+    testing = argv[1] == '-test'
+    if len(argv) == 1 or (testing and len(argv==2)):
         model_name = sorted(listdir(models_dir)).pop()
         print('Evaluating newest model:', model_name)
     else:
-        model_name = argv[1]
+        model_name = argv[-1]
         print('Evaluating', model_name)
     if model_name in listdir(f'{working_dir}/evaluation'):
         raise FileExistsError('Target evaluation folder already exists. Remove before running')
@@ -22,8 +23,8 @@ def main():
     mkdir(output_dir)
 
     checkpoint = f'{models_dir}/{model_name}'
-
-    test_df = pd.read_csv(working_dir + '/data/test.csv.gz')
+    nrows = 12 if testing else None
+    test_df = pd.read_csv(working_dir + '/data/test.csv.gz', nrows=nrows)
     test_df = test_df
     test_data = Dataset.from_pandas(test_df)
 
@@ -38,11 +39,14 @@ def main():
     rouge = evaluate.load("rouge")
     eval = rouge.compute(predictions=predictions['prediction'], references=predictions['abstract'])
     print(eval)
-    with open(f'{output_dir}/rouge_score.txt', mode='w') as f:
-        f.write(eval)
-    for i, example in predictions:
-        with open(f'{output_dir}/{i}.txt', mode='w') as f:
-            f.write(f'ABSTRACT: \n{example["abstract"]} \n \nPREDICTION: \n{example["prediction"]} \n \nFULL TEXT: \n {example["fulltext"]}')
+    if testing:
+        print(f"\nABSTRACT (1st):\n{predictions[0]['abstract']}\n\nPREDICTION (1st):\n{predictions[0]['prediction']}")
+    else:
+        with open(f'{output_dir}/rouge_score.txt', mode='w') as f:
+            f.write(eval)
+        for i, example in predictions:
+            with open(f'{output_dir}/{i}.txt', mode='w') as f:
+                f.write(f'ABSTRACT: \n{example["abstract"]} \n \nPREDICTION: \n{example["prediction"]} \n \nFULL TEXT: \n {example["fulltext"]}')
 
 
 if __name__ == '__main__':
