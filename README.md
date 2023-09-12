@@ -26,3 +26,7 @@ The data for this project is drawn from [CORE](https://core.ac.uk/), a UK-based 
 This was supplemented by subject-matter tags from [CrossRef](https://www.crossref.org/), 
 
 # Model and training
+
+Comparison models:
+- ccdv/lsg-bart-base-16384-arxiv
+- google/bigbird-pegasus-large-arxiv

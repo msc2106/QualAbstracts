@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Seq2SeqTrainingArguments, Seq2SeqTrainer, DataCollatorForSeq2Seq, AutoConfig
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Seq2SeqTrainingArguments, Seq2SeqTrainer, DataCollatorForSeq2Seq
 from datasets import Dataset
 import evaluate
 import platform
@@ -7,11 +7,15 @@ import numpy as np
 from os import mkdir, listdir
 from time import strftime
 from sys import argv
+import re
 import torch
 torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True
 
 def main():
+    if len(argv) != 3:
+        print("syntax: python train.py checkpoint subset \nUse . to indicate latest checkpoint in ./models or to use the full training dataset")
+        exit()
     working_dir = '.'
     data_dir = working_dir + '/data'
     models_dir = working_dir + '/models'
@@ -19,7 +23,6 @@ def main():
     tmp_dir = 'model_temp'
     if 'model_temp' not in listdir():
         mkdir(tmp_dir)
-
     if len(argv) == 1:
         latest_model = sorted(listdir(models_dir)).pop()
         print("Latest model:", latest_model)
@@ -37,7 +40,7 @@ def main():
     ##################################
 
     num_epochs = 5
-    subset_size = None
+    subset_size = None if argv[2] == '.' else int(argv[2])
     test_subset_size = None if not subset_size else subset_size // 16
 
     # environ['PJRT_DEVICE'] = 'GPU' # this seems to cause a cudnn version error
@@ -129,7 +132,7 @@ def main():
 
     timestamp = strftime('%Y%m%d%H%M')
     if len(argv) == 1:
-        model_save_name = 'checkpoint' + timestamp
+        model_save_name = get_name(checkpoint) + timestamp
     else:
         cleaned_name = checkpoint.replace('/','_').replace('-','_')
         model_save_name = f'{cleaned_name}_tuned_{timestamp}'
@@ -139,6 +142,11 @@ def main():
     print('saved to:', model_save_dir)
 
     print(trainer.evaluate())
+
+
+def get_name(checkpoint):
+    return re.match(r'.+(?=2023)', checkpoint)[0]
+
 
 if __name__ == '__main__':
     main()
