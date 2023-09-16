@@ -13,8 +13,8 @@ torch.backends.cuda.matmul.allow_tf32 = True
 torch.backends.cudnn.allow_tf32 = True
 
 def main():
-    if len(argv) != 3:
-        print("syntax: python train.py checkpoint subset \nUse . to indicate latest checkpoint in ./models or to use the full training dataset")
+    if len(argv) != 4:
+        print("syntax: python train.py checkpoint subset epochs \nUse . to indicate latest checkpoint in ./models or to use the full training dataset")
         exit()
     working_dir = '.'
     data_dir = working_dir + '/data'
@@ -23,12 +23,14 @@ def main():
     tmp_dir = 'model_temp'
     if 'model_temp' not in listdir():
         mkdir(tmp_dir)
-    if len(argv) == 1:
-        latest_model = sorted(listdir(models_dir)).pop()
-        print("Latest model:", latest_model)
-        checkpoint = f'{models_dir}/{latest_model}'
+    if argv[1] == '.':
+        model_name = sorted(listdir(models_dir)).pop()
+        print("Latest model:", model_name)
+        checkpoint = f'{models_dir}/{model_name}'
     else:
-        checkpoint=argv[1]
+        model_name=argv[1]
+        checkpoint=model_name
+        print("Checkpoint:", checkpoint)
 
     ###### Model to be fine-tuned #####
     ### longt5: alternative version in order of memory intensity
@@ -39,21 +41,23 @@ def main():
     #### continue training last model
     ##################################
 
-    num_epochs = 5
+    num_epochs = int(argv[3])
     subset_size = None if argv[2] == '.' else int(argv[2])
     test_subset_size = None if not subset_size else subset_size // 16
 
     # environ['PJRT_DEVICE'] = 'GPU' # this seems to cause a cudnn version error
     training_args = Seq2SeqTrainingArguments(
         tmp_dir,
+        bf16=True, #cause of loss failing to decrease?
+        bf16_full_eval=True,
         #evaluation_strategy = 'epoch',
-        per_device_eval_batch_size = 2,
+        per_device_eval_batch_size = 1,
         predict_with_generate = True,
         per_device_train_batch_size = 1,
-        gradient_accumulation_steps = 2,
+        gradient_accumulation_steps = 1,
         gradient_checkpointing = True,
         num_train_epochs = num_epochs,
-        #optim = 'adafactor',
+        optim = 'adafactor',
         save_total_limit=1 # NB AdamW checkpoints are very large
     )
 
@@ -132,9 +136,9 @@ def main():
 
     timestamp = strftime('%Y%m%d%H%M')
     if len(argv) == 1:
-        model_save_name = get_name(checkpoint) + timestamp
+        model_save_name = get_name(model_name) + timestamp
     else:
-        cleaned_name = checkpoint.replace('/','_').replace('-','_')
+        cleaned_name = model_name.replace('/','_').replace('-','_')
         model_save_name = f'{cleaned_name}_tuned_{timestamp}'
     model_save_dir = f'{models_dir}/{model_save_name}'
     mkdir(model_save_dir)

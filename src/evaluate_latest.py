@@ -4,13 +4,14 @@ import evaluate
 from os import listdir
 import pandas as pd
 import numpy as np
+from sys import argv
 
 working_dir = '.'
 models_dir = working_dir + '/models'
 latest_model = sorted(listdir(models_dir)).pop()
 output_file = f'{working_dir}/evaluation/{latest_model}.txt'
 finetuned = f'{models_dir}/{latest_model}'
-sample_size = 256
+sample_size = 256 if len(argv)<2 else int(argv[1])
 
 print('Newest model:', latest_model)
 
@@ -26,7 +27,7 @@ tokenizer = AutoTokenizer.from_pretrained(finetuned)
 model = AutoModelForSeq2SeqLM.from_pretrained(finetuned, do_sample=True, num_beams=2, device_map='auto')
 pipe = pipeline("summarization", model=model, tokenizer=tokenizer, device_map='auto')
 first_pred = pipe(first_record['fulltext'])[0]['summary_text']
-predictions = test_data.map(gen, batched=True, batch_size=4)
+predictions = test_data.map(gen, batched=True, batch_size=2)
 
 rouge = evaluate.load("rouge")
 eval = rouge.compute(predictions=predictions['prediction'], references=predictions['abstract'])
