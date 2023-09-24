@@ -4,8 +4,10 @@ import evaluate
 from os import listdir, mkdir
 import pandas as pd
 import numpy as np
+import torch
 from sys import argv
-
+torch.backends.cuda.matmul.allow_tf32 = True
+torch.backends.cudnn.allow_tf32 = True
 
 def main():
     working_dir = '.'
@@ -34,13 +36,13 @@ def main():
     test_df = test_df
     test_data = Dataset.from_pandas(test_df)
 
-    tokenizer = AutoTokenizer.from_pretrained(checkpoint, truncation=True, max_length=16384, trust_remote_code=True)
-    model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, do_sample=True, num_beams=2, device_map='auto', trust_remote_code=True)
+    tokenizer = AutoTokenizer.from_pretrained(checkpoint, truncation=True, model_max_length=16384, trust_remote_code=True)
+    model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, do_sample=True, num_beams=2, device_map='auto', max_length=512, torch_dtype=torch.bfloat16, trust_remote_code=True)
     pipe = pipeline("summarization", model=model, tokenizer=tokenizer, device_map='auto')
 
     def gen(batch):
         return {'prediction': [item['summary_text'] for item in pipe(batch['fulltext'], truncation=True)]}
-    predictions = test_data.map(gen, batched=True, batch_size=4)
+    predictions = test_data.map(gen, batched=True, batch_size=2)
 
     rouge = evaluate.load("rouge")
     eval = rouge.compute(predictions=predictions['prediction'], references=predictions['abstract'])
